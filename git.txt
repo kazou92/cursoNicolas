@@ -1,0 +1,27 @@
+es un sitema de versiones de controller ,es el mas utilizado
+para configurar git comando:
+es una herramienta que nos permite de tener una historial de todo el codigo que hemos escrito
+git nos permite trabjar sobre nuestro codigo de manera descentralizada
+NB: rollback es volvera una version anterior a nuestro codigo
+NB: CR ES carrage return LF : line feed
+
+git config --globall user.name "adler"
+git config -- globall user.email "adlersejousnat92@gmail.com"
+git config -- globall core.editor "code --wait"
+git config -- globall -e es para ver todas las configuaraciones que acabamos de hacer en VSC.
+git config -- globall core.editor core.autocrlf  true(windows), input(mac/linux)
+git init : es para initial un projecto en git (.git es un archivo q vas estar creado )el punto en git significa es un directorio encuentra oculto que no basta ejecutar el comando ls para listalo sino ls - a para mostrar absolutamente todo
+ls -a en .git mostrar : . .. .git 
+. es directorio actual donde se encuentra 
+cd .. para mover a un directorio atras
+ cd .git se encuentra todos los archivos y directorios que nos permitiran gestionar nuestro projectode git (git status, git commit etc...)
+
+                                                CONFIGURACION DE CORE.AUTOCRLF
+
+
+
+                                        USO DE GIT 
+                                    -historial
+                                    -Almacebnar codigo
+                                    -trabjar en equipo
+                                    - cuando se introdujo un error    

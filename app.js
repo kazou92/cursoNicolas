@@ -1,7 +1,7 @@
 // 1-variables
 //tipos de datos
 // existe dos tipos de datos
-// a) primitivos : string, boolean,number,undefined,null
+//  a) primitivos : string, boolean,number,undefined,null
 //b) de referencia : array,object, functions, clases
 
 // hay una section  de la memoria ram que no es extendible alli se guardan los tipos de datos primitivos se llama STACK Y el contrario es la memoria heap es extendible es donde van a guardar todos los tipos de datos de referencia
@@ -216,23 +216,96 @@ console.log(user1);
 //   console.log(llave, punto[llave]);
 // }
 
-// ?=========> CLONAR  (OBJECT) ===========>
-let punto2 = {
-  x: 1,
-  y: 3,
-};
+// ?=========> CLONAR OBJETOS (OBJECT) ===========>
+// let punto2 = {
+//   x: 1,
+//   y: 3,
+// };
 
-let referencia = Object.assign({}, punto2, { z: 6 });
-let clonarunto2 = Object.assign({}, punto2);
-let otherWayToClone = { ...punto2 };
+// let referencia = Object.assign({}, punto2, { z: 6 });
+// let clonarunto2 = Object.assign({}, punto2);
+// let otherWayToClone = { ...punto2 };
 
-console.log(
-  "punto2 :",
-  punto2,
-  "clone :",
-  clonarunto2,
-  "referencia: ",
-  referencia,
-  "otherWayToClone: ",
-  otherWayToClone
-);
+// console.log(
+//   "punto2 :",
+//   punto2,
+//   "clone :",
+//   clonarunto2,
+//   "referencia: ",
+//   referencia,
+//   "otherWayToClone: ",
+//   otherWayToClone
+// );
+
+//   =========> PRIVATE-PUBLIC (OBJECT) ===========>
+
+// function Usuario() {
+//   this.name = "adler";
+//   let log = () => {
+//     console.log("loggeando ...");
+//   };
+//   this.guardar = () => {
+//         log();
+//     console.log("guardando ...");
+//   };
+// }
+
+// let usuario = new Usuario();
+
+// usuario.log = () => {
+//   console.log("lale");
+// };
+// usuario.guardar();
+
+//   =========> DATE (OBJECT) ===========>
+// const ahorra = new Date();
+// console.log(ahorra);
+
+//   =========> EJERCICIOS ===========>
+// function UsuarioN(name) {
+//   this.id = Math.random();
+//   this.name = name;
+// }
+
+// let usuario = new UsuarioN("adler");
+// let usuario1 = new UsuarioN("Steeve");
+// console.log(usuario, usuario1);
+
+// function usuarioN(name) {
+//   return {
+//     id: Math.random(),
+//     name: name,
+//   };
+// }
+
+// let u = usuarioN("adler");
+// let u1 = usuarioN("Steeve");
+// console.log(u, u1);
+
+//   =========> AGREGAR,ELIMINAR (ARRAYS) ===========>
+
+// metodos para agregar alementos,eliminar el comienzo y al final
+
+//const letras = ["a", "b", "d", "e"];
+// letras.push("c"); // agregar al final
+// letras.unshift("f");//agregar al inicio
+// letras.shift(); // eliminar al inicio
+// letras.pop();// eliminar al final
+// letras.splice(1, 1, "i");
+// console.log(letras);
+
+//   =========> BUSCAR PRIMITIVOS (ARRAYS) ===========>
+
+const letras = ["a", "b", "d", "e", "b"];
+
+console.log(letras.indexOf("b"));
+console.log(letras.lastIndexOf("b"));
+console.log(letras.lastIndexOf("v"));
+console.log(letras.includes("e"));
+console.log(letras.includes("v"));
+console.log(letras.indexOf("b") !== -1);
+
+//   =========> FAT ARROWS FUNCTIONS (ARRAYS) ===========>
+// Todas las arrows functions son anonimas
+
+//   =========> BUSCAR POR REFERENCIA (ARRAYS) ===========>
