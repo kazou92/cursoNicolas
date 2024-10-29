@@ -16,6 +16,11 @@ ls -a en .git mostrar : . .. .git
 cd .. para mover a un directorio atras
  cd .git se encuentra todos los archivos y directorios que nos permitiran gestionar nuestro projectode git (git status, git commit etc...)
 
+ git rm nombre para elimina el archivo
+ git restore para recuperar
+ git mv para renombrar un archivo y lleva dos argumentos 
+ git status -s
+
                                                 CONFIGURACION DE CORE.AUTOCRLF
 
 

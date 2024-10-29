@@ -309,3 +309,4 @@ console.log(letras.indexOf("b") !== -1);
 // Todas las arrows functions son anonimas
 
 //   =========> BUSCAR POR REFERENCIA (ARRAYS) ===========>
+//Predicated es una funcion que devuelve un Boolean
