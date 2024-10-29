@@ -20,6 +20,12 @@ cd .. para mover a un directorio atras
  git restore para recuperar
  git mv para renombrar un archivo y lleva dos argumentos 
  git status -s
+ git diff
+ git diff --staged
+ git log : es para revisar todo el historial de nuestro repositorio
+ git log --oneline
+ git branch para ver en que ramas estamos 
+ git checkout -b nombre de la ramas que quieres crear
 
                                                 CONFIGURACION DE CORE.AUTOCRLF
 
