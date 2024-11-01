@@ -26,6 +26,7 @@ cd .. para mover a un directorio atras
  git log --oneline
  git branch para ver en que ramas estamos 
  git checkout -b nombre de la ramas que quieres crear
+ git merge la rama que queremos traer .recuerda para hacer un merge tiene que estar en la rama main (master)
 
                                                 CONFIGURACION DE CORE.AUTOCRLF
 
