@@ -376,14 +376,38 @@
 // }
 
 // console.log(fizBooz(numero));
-const lista = {
-  nombre: "adler",
-  apellido: "sejousnat",
-  pais: "haiti",
-};
+// const lista = {
+//   nombre: "adler",
+//   apellido: "sejousnat",
+//   pais: "haiti",
+// };
 
-const property = (obj, prop) => {
-  return prop in obj;
-};
+// const property = (obj, prop) => {
+//   return prop in obj;
+// };
 
-console.log(property(lista, "nombre"));
+// console.log(property(lista, "nombre"));
+
+// function getColor(selection) {
+//   switch (selection) {
+//     case "red":
+//       true;
+//       break;
+//     case "green":
+//       console.log(true);
+//       break;
+//     case "blue":
+//       console.log(true);
+//       break;
+//     // Add more options here
+//     default:
+//       return false; //returns false because the user picked an unavailable color
+//       break;
+//   }
+// }
+
+// let colorname = prompt("What color do you want?").trim();
+// let isAvailable = getColor(colorname);
+
+// if (isAvailable) console.log("Good news! That color is available");
+// else console.log("We are sorry, that color is not available");

@@ -137,6 +137,8 @@ console.log(user1);
 
 // r();
 
+// clo
+
 // ?=========> METODO CALL (OBJECT) ===========>
 
 // function Punto(x, y) {
@@ -310,3 +312,4 @@ console.log(letras.indexOf("b") !== -1);
 
 //   =========> BUSCAR POR REFERENCIA (ARRAYS) ===========>
 //Predicated es una funcion que devuelve un Boolean
+//console.log(`${nombre}`);
