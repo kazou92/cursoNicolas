@@ -53,6 +53,7 @@
 // user1.guardar();
 // delete user1.name;
 // delete user1.guardar;
+// console.log(user1);
 //NB : para no permitir que se pueda modificar las propiedades d un objeto hay q congelarlo .freeze
 // SEAL:  permite que las propiedades esten fijas que no pueden ni agregar ni quitar pero son modificables.
 
@@ -99,31 +100,31 @@
 // todos los objetos que son creados en JS tienen una propiedad que se llama contructor
 // esta propiedad nos indica con que constructor fue creado este objeto
 
-let obj = {}; // este es un atajos que tiene JS para poder llamar al constructor de objetos
-let obj2 = new Object(); //! es lo mismo pero nunca dberia usarlo para crear un objeto
+//let obj = {}; // este es un atajos que tiene JS para poder llamar al constructor de objetos
+//let obj2 = new Object(); //! es lo mismo pero nunca dberia usarlo para crear un objeto
 
 // ?=========> FUNCIONES (OBJECT) ===========>
 // las funciones son objetos en JS ya que
 
-function Usuario(name) {
-  this.name = name;
-}
+// function Usuario(name) {
+//   this.name = name;
+// }
 
-console.log(Usuario.name);
-console.log(Usuario.length);
+// console.log(Usuario.name);
+// console.log(Usuario.length);
 // 1- por que se las  pueden asignar una variable
-let U = Usuario;
+//let U = Usuario;
 
-let user = new U("adler");
-console.log(user);
+// let user = new U("adler");
+// console.log(user);
 
 // 2- se las pueden pasar como parametros a otra funcion
-function of(Fn, arg) {
-  return new Fn(arg);
-}
+// function of(Fn, arg) {
+//   return new Fn(arg);
+// }
 
-let user1 = of(Usuario, "adler");
-console.log(user1);
+// let user1 = of(Usuario, "adler");
+// console.log(user1);
 
 //3-se las pueden retornar por otra funciones
 
@@ -298,18 +299,127 @@ console.log(user1);
 
 //   =========> BUSCAR PRIMITIVOS (ARRAYS) ===========>
 
-const letras = ["a", "b", "d", "e", "b"];
+// const letras = ["a", "b", "d", "e", "b"];
 
-console.log(letras.indexOf("b"));
-console.log(letras.lastIndexOf("b"));
-console.log(letras.lastIndexOf("v"));
-console.log(letras.includes("e"));
-console.log(letras.includes("v"));
-console.log(letras.indexOf("b") !== -1);
+// console.log(letras.indexOf("b"));
+// console.log(letras.lastIndexOf("b"));
+// console.log(letras.lastIndexOf("v"));
+// console.log(letras.includes("e"));
+// console.log(letras.includes("v"));
+// console.log(letras.indexOf("b") !== -1);
 
-//   =========> FAT ARROWS FUNCTIONS (ARRAYS) ===========>
+// ?  =========> FAT ARROWS FUNCTIONS (ARRAYS) ===========>
 // Todas las arrows functions son anonimas
 
 //   =========> BUSCAR POR REFERENCIA (ARRAYS) ===========>
 //Predicated es una funcion que devuelve un Boolean
 //console.log(`${nombre}`);
+
+// const obj1 = [
+//   {
+//     pais: "haiti",
+//     age: 25,
+//   },
+// ];
+
+// let result = obj1.findIndex((us) => {
+//   return us.pais === "haiti";
+// });
+
+// console.log(result);
+
+//? Vaciando arrays
+
+//en JS tenemos 4 forma de vacir un array
+//!primero
+// let arreglo = [5, 59, 8, 9];
+// let arreglo3 = arreglo;
+
+// arreglo = [];
+// console.log(arreglo, arreglo3);
+
+//!segundo
+// let arreglo = [5, 59, 8, 9];
+
+// arreglo.length = 0;
+// console.log(arreglo);
+
+//!tercero
+// let arreglo = [5, 59, 8, 9];
+// arreglo.splice(0, arreglo.length);
+// console.log(arreglo);
+
+//!cuarto
+//let arreglo = [5, 59, 8, 9];
+// while (arreglo.length > 0) {
+//   arreglo.pop();
+// }
+// console.log(arreglo);
+
+//?combinando y dividendo
+
+// let arr = [2, 8, 4, 6];
+// let arr2 = [2, 8, 4, 6];
+// let combinando = arr.concat(arr2);
+// let dividir = combinando.slice(1);
+// let divididos = combinando.slice(1, 3);
+// let copy = combinando.slice();
+// console.log(combinando);
+
+// let arreglo = [5, 59, [5, [8, 5, 2], 9], 8, 9];
+
+// let result = arreglo.reduce((acc, el) => acc.concat(el), []);
+
+//console.log(result);
+//console.log(result);
+
+//? pread operator
+
+// let arr = [2, 8, 4, 6];
+
+// let copyArray = [...arr];
+// console.log(copyArray);
+
+//? Every y some
+
+// let arr = [5, 7, 3, 1];
+
+// let result = arr.every((x) => x % 2 === 0);
+// let result1 = arr.some((x) => x % 2 === 0);
+// console.log(result);
+// console.log(result1);
+
+//? Every y some
+
+const usuarios = [
+  { id: 1, nombre: "adler", age: 33 },
+  { id: 2, nombre: "steeve", age: 2 },
+  { id: 3, nombre: "christian", age: 6 },
+  { id: 1, nombre: "paphney", age: 33 },
+  { id: 1, nombre: "leper", age: 27 },
+];
+
+// let result = usuarios.map((usuario) => {
+//   return usuario.nombre;
+// });
+
+// let result = usuarios
+//   .filter((asuario) => asuario.age > 17)
+//   .map((usuario) => {
+//     return usuario.nombre;
+//   });
+
+//console.log(result);
+// let result = usuarios.map((usuario) => ({
+//   ...usuario,
+//   mayor: usuario.age > 17,
+// }));
+
+// console.log(result);
+
+//? Manipulacion del Dom
+
+let domaine = document.getElementById("domaine");
+c
+
+

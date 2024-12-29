@@ -117,22 +117,94 @@ Muestra la información de todos los superheroes
 // La palabra es: _i___
 // Te quedan 5 intentos
 
-const ahorcado = (palabraSecreta) => {
-  let palabraOculta = "_".repeat(palabraSecreta.length);
-  let intento = 5;
-  while (intento > 0 && palabraOculta !== palabraSecreta) {
-    let letra = prompt("adivina una letra");
+// let pronoun = ["the", "our"];
+// let adj = ["great", "big"];
+// let noun = ["jogger", "racoon"];
 
-    for (
-      let contadorLetras = 0;
-      contadorLetras < palabraSecreta.length;
-      contadorLetras++
-    ) {}
-  }
-};
+// let dom1 = pronoun[0] + adj[0] + noun[0] + ".com";
 
-document
-  .querySelector(".btn")
-  .addEventListener("click", () => ahorcado("adler"));
+// console.log(dom1);
 
-let result = ahorcado("adler");
+// const combinateDomaine = (pron, adj, noun) => {
+//   let domaines = [];
+//   for (let i = 0; i < pron.length; i++) {
+//     for (let j = 0; j < adj.length; j++) {
+//       for (let k = 0; k < noun.length; k++) {
+//         domaines.push(`${pron[i]}${adj[j]}${noun[k]}.com`);
+//       }
+//     }
+//   }
+//   return domaines;
+// };
+
+// let result1 = combinateDomaine(pronoun, adj, noun);
+// console.log(result.join("\n"));
+
+// const ahorcado = (palabraSecreta) => {
+//   let palabraOculta = "_".repeat(palabraSecreta.length);
+//   let intento = 5;
+//   while (intento > 0 && palabraOculta !== palabraSecreta) {
+//     let letra = prompt("adivina una letra");
+
+//     for (
+//       let contadorLetras = 0;
+//       contadorLetras < palabraSecreta.length;
+//       contadorLetras++
+//     ) {}
+//   }
+// };
+
+// document
+//   .querySelector(".btn")
+//   .addEventListener("click", () => ahorcado("adler"));
+
+// let result = ahorcado("adler");
+
+// let arr = [6, 7, 3, 1, 4, 8];
+
+// let result = arr.map((n) => (n % 2 === 0 ? n * 2 : false)).filter(Boolean);
+
+// let cont = document.querySelector(".cont");
+// for (r of result) {
+//   let li = document.createElement("li");
+//   li.innerHTML = r;
+//   cont.appendChild(li);
+// }
+
+// console.log(result);
+
+// window.onload = function () {
+
+//     const combinateDomaine = (pron, adj, noun) => {
+//       let domaines = [];
+//       for (let i = 0; i < pron.length; i++) {
+//         for (let j = 0; j < adj.length; j++) {
+//           for (let k = 0; k < noun.length; k++) {
+//             domaines.push(`${pron[i]}${adj[j]}${noun[k]}.com`);
+//           }
+//         }
+//       }
+//       return domaines;
+//     };
+
+//     let pronoun = ["the", "our"];
+//     let adj = ["great", "big"];
+//     let noun = ["jogger", "racoon"];
+
+//     let result = combinateDomaine(pronoun, adj, noun);
+
+//     let domaine = document.querySelector(".domaine");
+
+//     let ol = document.createElement("ol");
+
+//     for (let r of result) {
+//       let li = document.createElement("li");
+
+//       li.innerHTML = r;
+//       ol.appendChild(li);
+//       domaine.appendChild(ol);
+//     }
+//     console.log(result.join("\n"));
+//   };
+
+//diferencia entre innerText y textContent en js? innerText no muestra los elementos ocultos en el dom, textContent si los muestra

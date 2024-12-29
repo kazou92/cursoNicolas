@@ -205,27 +205,27 @@
 // });
 
 // for (let i in localStorage) {
-//   //console.log(localStorage[i]);
+//   console.log(localStorage[i]);
 //   if (typeof localStorage[i] === "string" && localStorage[i].length) {
 //     let li = document.createElement("li");
 //     li.append(localStorage[i]);
 //     ul.append(li);
 //   }
 // }
-// localStorage.clear();
+// //localStorage.clear();
 
 // const off = document.querySelector(".off");
 
 // const lamp = document.querySelector(".lamp_btn");
 
-// console.log(lamp);
-// lamp.forEach((x) => {
+// //console.log(lamp);
+// [lamp].forEach((x) => {
 //   x.addEventListener("click", () => {
 //     off.classList.toggle("on");
-//     if (x.innerHTML == "💡") {
-//       x.innerHTML = "🔦";
+//     if (x.innerHTML == "🙄") {
+//       x.innerHTML = "🙈";
 //     } else {
-//       x.innerHTML = "💡";
+//       x.innerHTML = "🙄";
 //     }
 //   });
 // });
@@ -411,3 +411,30 @@
 
 // if (isAvailable) console.log("Good news! That color is available");
 // else console.log("We are sorry, that color is not available");
+
+// const success = (pos) => {
+//   console.log(pos.coords.latitude, pos.coords.longitude);
+// };
+// navigator.geolocation.getCurrentPosition(success);
+
+let form = document.querySelector(".formal");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let city = document.querySelector(".inputo").value;
+  let result = getwheter(city)
+    .then((res) => console.log(res))
+    .catch((error) => console.log(error));
+});
+
+function getwheter(city) {
+  const API = "dc91283d4994d89690129a89c97d1de3";
+
+  return fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`
+  )
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => console.log(error));
+}
